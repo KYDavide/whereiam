@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Repository</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: monospace;
+            color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .formatted-text {
+            display: none;
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Repository</h1>
+        <img src="img.jpg" alt="Image" onclick="toggleFormattedText()">
+        <div id="formattedText" class="formatted-text">
+            <!-- Formatted text will be inserted here dynamically -->
+        </div>
+        <p>GPS Coordinates: 37.7749° N, 122.4194° W</p>
+        <a href="mailto:davide.brualdi@gmail.com"><button>Write Email</button></a>
+    </div>
+    <div class="footer">
+        <p>KYD2024</p>
+    </div>
+
+    <script>
+        // Function to fetch and display formatted text from data.md
+        async function fetchFormattedText() {
+            try {
+                const response = await fetch('data.md');
+                const text = await response.text();
+                const formattedText = parseMarkdownToHTML(text);
+                document.getElementById('formattedText').innerHTML = formattedText;
+            } catch (error) {
+                console.error('Error fetching data.md:', error);
+            }
+        }
+
+        // Function to parse Markdown text to HTML
+        function parseMarkdownToHTML(markdownText) {
+            // Implement your own Markdown to HTML conversion logic here if needed
+            // For simplicity, let's assume markdownText is plain text for now
+            return markdownText.replace(/\n/g, '<br>');
+        }
+
+        // Function to toggle visibility of formatted text box
+        function toggleFormattedText() {
+            const formattedTextElement = document.getElementById('formattedText');
+            if (formattedTextElement.style.display === 'block') {
+                formattedTextElement.style.display = 'none';
+            } else {
+                fetchFormattedText();
+                formattedTextElement.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
