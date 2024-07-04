@@ -1,12 +1,12 @@
-# Page Title: Day0
+# Page Title: My Custom Page
 
 ## Image and Coordinates
-- GPS Coordinates: 44.494887° N, 11.3426163° W             
-- Image URL: https://github.com/KYDavide/whereiam/blob/005b489984a05b5075cd0e290b61ca37e3a6baff/img.jpg
+- GPS Coordinates: 40.7128° N, 74.0060° W
+- Image URL: /img.jpg
 
 ## Date and Time
 - Date: 2024-07-04
-- Time: 18:30 PM
+- Time: 12:00 PM
 
 ## Description
-Ecco la prima pubblicazione, questa è una prova del codice e della possibile *formattaizone* del testo.
+This is some **text** that will *appear* in a box on top of the squared box when people click on the image.
