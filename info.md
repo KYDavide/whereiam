@@ -1,12 +1,12 @@
-# Page Title: My Custom Page
+# Page Title: Day0
 
 ## Image and Coordinates
-- GPS Coordinates: 40.7128° N, 74.0060° W
-- Image URL: https://example.com/image.jpg
+- GPS Coordinates: 44.494887° N, 11.3426163° W             
+- Image URL: /image.jpg
 
 ## Date and Time
 - Date: 2024-07-04
-- Time: 12:00 PM
+- Time: 18:30 PM
 
 ## Description
-This is some text that will appear in a box on top of the squared box when people click on the image.
+Ecco la prima pubblicazione, questa è una prova del codice e della possibile *formattaizone* del testo.
