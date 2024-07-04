@@ -7,4 +7,4 @@ const config = {
     audioUrl: "audio.mp3",
     videoUrl: "video.mp4",
     description: "This is some **text** that will *appear* in a box when people click inside the squared box."
-};
+}
