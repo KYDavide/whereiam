@@ -19,6 +19,12 @@ img {
     cursor: pointer;
 }
 
+#mdContent {
+    border: 1px solid black;
+    overflow: auto;
+    box-sizing: border-box; /* Ensure the padding and border are included in the element's total width and height */
+}
+
 footer {
     margin-top: auto;
     padding: 20px;
