@@ -1,8 +1,7 @@
-# Prova diario
-Date: 2024-07-07 
-Time: 12:34 
-Coordinates: 37.7749° N, 122.4194° W 
-Image: sample.jpg
+# My Location Title
+Date: 2024-07-08
+Time: 12:00
+Coordinates: 40.712776, -74.005974
+Image: example.jpg
 
-Ecco a voi la prima pagina del mio diario di viaggio, vediamo se funziona tutto a meravigia o devo ancotra lottare con chat gpt per aiutarmi a scrivere questa cosa.
-..
+This is the main content of the markdown file. You can write any additional information here. The title, date, time, and coordinates will be extracted and used in the index file.
