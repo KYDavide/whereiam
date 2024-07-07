@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
             img.addEventListener('click', () => {
                 const mdContentDiv = document.getElementById('mdContent');
                 
-                // Set the dimensions of mdContent to match the image
-                mdContentDiv.style.width = img.clientWidth + 'px';
-                mdContentDiv.style.height = img.clientHeight + 'px';
+                // Set the dimensions of mdContent to match the maximum image size specified in CSS
+                mdContentDiv.style.width = '300px'; /* Same as max-width in CSS */
+                mdContentDiv.style.height = 'auto'; /* Adjust this if needed */
                 
                 // Toggle visibility
                 mdContentDiv.style.display = mdContentDiv.style.display === 'none' ? 'block' : 'none';
