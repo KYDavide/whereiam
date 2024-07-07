@@ -35,4 +35,28 @@ document.addEventListener("DOMContentLoaded", () => {
             );
             const mdContent = `<pre>${filteredLines.join('\n')}</pre>`;
 
-            contentDiv
+            contentDiv.innerHTML = `
+                <p>${infoLine}</p>
+                <div>${imgElement}</div>
+                <div>${buttonElement}</div>
+                <div id="mdContent" style="display:none;">${mdContent}</div>
+            `;
+
+            // Add event listener to the image
+            const img = document.getElementById('mdImage');
+            img.addEventListener('click', () => {
+                const mdContentDiv = document.getElementById('mdContent');
+                
+                // Set the dimensions of mdContent to match the image
+                mdContentDiv.style.width = img.clientWidth + 'px';
+                mdContentDiv.style.height = img.clientHeight + 'px';
+                
+                // Toggle visibility
+                mdContentDiv.style.display = mdContentDiv.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+});
+
+function sendMail() {
+    window.location.href = "mailto:davide.brualdi@gmail.com";
+}
