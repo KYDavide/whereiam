@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     fetch('data.md')
         .then(response => response.text())
         .then(data => {
