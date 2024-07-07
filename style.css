@@ -17,14 +17,28 @@ body {
     border: 1px solid black;
     overflow: auto;
     box-sizing: border-box;
-    margin: 20px auto;
+    margin: 20px auto;<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where I Am</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content"></div>
+    <footer>KYD2024</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
 }
 img {
-    max-width: 100%;
+    max-width: 25%;
     height: auto;
     cursor: pointer;
 }
