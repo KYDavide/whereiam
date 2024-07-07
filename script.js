@@ -42,8 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div id="mdContent" style="display:none;">${mdContent}</div>
             `;
 
-            document.getElementById('mdImage').addEventListener('click', () => {
+            // Add event listener to the image
+            const img = document.getElementById('mdImage');
+            img.addEventListener('click', () => {
                 const mdContentDiv = document.getElementById('mdContent');
+                
+                // Set the dimensions of mdContent to match the image
+                mdContentDiv.style.width = img.clientWidth + 'px';
+                mdContentDiv.style.height = img.clientHeight + 'px';
+                
+                // Toggle visibility
                 mdContentDiv.style.display = mdContentDiv.style.display === 'none' ? 'block' : 'none';
             });
         });
