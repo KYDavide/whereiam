@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-document.addEventListener("DOMContentLoaded", () => {
     fetch('data.md')
         .then(response => response.text())
         .then(data => {
@@ -25,7 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const infoLine = `${title} | ${time} | ${date} | ${coordinates}`;
             const imgElement = `<img src="${image}" alt="${title}" id="mdImage">`;
             const buttonElement = `<button onclick="sendMail()">Contact</button>`;
-            const mdContent = `<pre>${data}</pre>`;
+
+            // Remove the lines with title, date, time, coordinates, and image
+            const filteredLines = lines.filter(line => 
+                !line.startsWith('# ') && 
+                !line.startsWith('Date: ') && 
+                !line.startsWith('Time: ') && 
+                !line.startsWith('Coordinates: ') && 
+                !line.startsWith('Image: ')
+            );
+            const mdContent = `<pre>${filteredLines.join('\n')}</pre>`;
 
             contentDiv.innerHTML = `
                 <p>${infoLine}</p>
