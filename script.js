@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const mdContentDiv = document.getElementById('mdContent');
                 
                 // Set the dimensions of mdContent to match the maximum image size specified in CSS
-                mdContentDiv.style.width = '300px'; /* Same as max-width in CSS */
+                mdContentDiv.style.width = '600px'; /* Same as max-width in CSS */
                 mdContentDiv.style.height = 'auto'; /* Adjust this if needed */
                 
                 // Toggle visibility
