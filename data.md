@@ -4,25 +4,26 @@ Time: 12:00
 Coordinates: 44.494887, 11.3426163
 Image: sample.jpg
 
-Ed eccoci alla prima pubblicazione del mio viaggio estivo. 
+Ed eccoci alla pubblicazione [zero] del mio viaggio estivo. 
 
-E' tremendamente difficile lasciare il porto sicuro  
+E' *tremendamente* difficile lasciare il porto sicuro  
 ancora più lasciare il proprio amore sulla riva.  
-E'un momento nel quale vorrei,  
+
+E' un momento nel quale vorrei,  
 più che proccuparmi,  
-occuparmi della pace,  
+occuparmi della ?pace,  
 che già, si sà,  
 con tutto questo cicaleccio,  
 viene sabotata 
 in modo direttamente proporzionale  
-al caldo che fa.
+al caldo che fa!  
 
 Pace e silenzio coincidono?  
 Sono davvero solo  
 su quest'isola? Ah no,    
 c'è Giudizio Giustizia,
-che mi aspetta al tavolo.  
-'me basterebbe anche un Giuda e starei sereno!
+che mi aspetta al tavolo dicendomi:  
+'me basterebbe anche un Giuda e starei più sereno!
 
 Poichè tentando di essere qualsiasi suono 
 come corda  
