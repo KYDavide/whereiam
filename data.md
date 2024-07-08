@@ -1,6 +1,6 @@
 # Bologna  
 Date: 2024-07-08
-Time: 12:00
+Time: 21:38
 Coordinates: 44.494887, 11.3426163
 Image: sample.jpg
 
