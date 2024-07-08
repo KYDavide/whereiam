@@ -4,36 +4,40 @@ Time: 12:00
 Coordinates: 44.494887, 11.3426163
 Image: sample.jpg
 
-Ed eccoci alla pubblicazione [zero] del mio viaggio estivo. 
+Ed eccoci alla pubblicazione [zero]  
+del mio viaggio estivo. 
 
-E' *tremendamente* difficile lasciare il porto sicuro  
-ancora più lasciare il proprio amore sulla riva.  
+E' *tremendamente* difficile  
+lasciare il porto sicuro  
+lanciando il proprio cuore sulla riva.  
 
 E' un momento nel quale vorrei,  
 più che proccuparmi,  
-occuparmi della ?pace,  
-che già, si sà,  
+occuparmi della...pace?  
+Che già, si sà,  
 con tutto questo cicaleccio,  
 viene sabotata 
 in modo direttamente proporzionale  
-al caldo che fa!  
+al caldo che sta iniziando!  
 
 Pace e silenzio coincidono?  
-Sono davvero solo  
-su quest'isola? Ah no,    
+Bisogna proprio essere soli?    
+Ah no,    
 c'è Giudizio Giustizia,
 che mi aspetta al tavolo dicendomi:  
 'me basterebbe anche un Giuda e starei più sereno!
 
-Poichè tentando di essere qualsiasi suono 
+Poichè tentando di essere qualsiasi  
+suono   
 come corda  
 stanca 
 ovattata  
 dal troppo vibrare
-per ogni girone infernale che vedo
-ma sopratutto per il °X°, [il mio]  
+per ogni girone infernale che vedo,  
 l'unico che posso davvero constatare  
-non riesco più a trovar ragione.  
+è il decimo, il mio,  
+e davvero non riesco più  
+a trovar ragione di restarci.    
 
 Inizia così un'avventura,  
 con un saluto  
