@@ -4,7 +4,8 @@ Time: 13:48
 Coordinates: 45.6236372, 7.8415611
 Image: sample.jpg  
 
-una nottata di sogni vividi con un sentore di cambiamento  
+[una]  
+nottata di sogni vividi con un sentore di cambiamento  
 e grande confusione, come se i percorsi normalmente usati  
 fossero svaniti e la mia mente non potesse richiamarli a sè.  
 
