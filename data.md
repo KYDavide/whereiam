@@ -1,44 +1,28 @@
-# Bologna  
-Date: 2024-07-08
-Time: 21:38
-Coordinates: 44.494887, 11.3426163
-Image: sample.jpg
+# SUC   
+Date: 2024-07-15
+Time: 13:48
+Coordinates: 45.6236372, 7.8415611
+Image: sample.jpg  
 
-Ed eccoci alla pubblicazione [zero]  
-del mio viaggio estivo. 
+una nottata di sogni vividi con un sentore di cambiamento  
+e grande confusione, come se i percorsi normalmente usati  
+fossero svaniti e la mia mente non potesse richiamarli a sè.  
 
-E' *tremendamente* difficile  
-lasciare il porto sicuro  
-lanciando il proprio cuore sulla riva.  
+Mi trovo in un paradiso naturale, ma i miei occhi  
+voltati verso l'interno, continuano a tenermi stretto  
+in panorami psichici.  
 
-E' un momento nel quale vorrei,  
-più che proccuparmi,  
-occuparmi della...pace?  
-Che già, si sà,  
-con tutto questo cicaleccio,  
-viene sabotata 
-in modo direttamente proporzionale  
-al caldo che sta iniziando!  
+Aspetto qualcosa che possa far girare la ruota  
+in perfetto equilibrio ma nel disagio della staticità.  
 
-Pace e silenzio coincidono?  
-Bisogna proprio essere soli?    
-Ah no,    
-c'è Giudizio Giustizia,
-che mi aspetta al tavolo dicendomi:  
-'me basterebbe anche un Giuda e starei più sereno!
+A che serve una ruota che non gira?  
 
-Poichè tentando di essere qualsiasi  
-suono   
-come corda  
-stanca 
-ovattata  
-dal troppo vibrare
-per ogni girone infernale che vedo,  
-l'unico che posso davvero constatare  
-è il decimo, il mio,  
-e davvero non riesco più  
-a trovar ragione di restarci.    
+*Il tuo passato è stato segnato da cambiamenti e svolte significative  
+che hanno influenzato la tua vita attuale.   
+Ora, potresti trovarti di fronte a sfide interne o esterne che  
+ti fanno sentire intrappolato. Tuttavia, il futuro promette  
+una conclusione positiva e la realizzazione dei tuoi sforzi.  
+Superando le difficoltà presenti, sarai in grado di raggiungere  
+un equilibrio e una soddisfazione duraturi.*
 
-Inizia così un'avventura,  
-con un saluto  
-scoprendo amore, Davide.
+
