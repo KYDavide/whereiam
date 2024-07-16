@@ -1,29 +1,27 @@
 # SUC   
-Date: 2024-07-15
-Time: 13:48
+Date: 2024-07-16
+Time: 22:23
 Coordinates: 45.6236372, 7.8415611
 Image: sample.jpg  
 
-[una]  
-nottata di sogni vividi con un sentore di cambiamento  
-e grande confusione, come se i percorsi normalmente usati  
-fossero svaniti e la mia mente non potesse richiamarli a sè.  
+[due]  
+pensieri interrotti
+rompono il pensiero  
 
-Mi trovo in un paradiso naturale, ma i miei occhi  
-voltati verso l'interno, continuano a tenermi stretto  
-in panorami psichici.  
+mille treni con ruote scalfite  
+uccidono il silenzio  
+il sogno  
+il sonno  
 
-Aspetto qualcosa che possa far girare la ruota  
-in perfetto equilibrio ma nel disagio della staticità.  
+e ora che posso pensare  
+e criticare in completa nudità  
 
-A che serve una ruota che non gira?  
+decido di fare silenzio  
+e ascolto  
 
-*Il tuo passato è stato segnato da cambiamenti e svolte significative  
-che hanno influenzato la tua vita attuale.   
-Ora, potresti trovarti di fronte a sfide interne o esterne che  
-ti fanno sentire intrappolato. Tuttavia, il futuro promette  
-una conclusione positiva e la realizzazione dei tuoi sforzi.  
-Superando le difficoltà presenti, sarai in grado di raggiungere  
-un equilibrio e una soddisfazione duraturi.*
+quanto ogni critica negativa  
+nasconda sotto il vestito  
+fili intreccitati da chi la veste  
 
-
+Meglio essere nudi  
+ed in città non si può.
