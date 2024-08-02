@@ -58,5 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function sendMail() {
-    window.location.href = "mailto:davide.brualdi@gmail.com";
+    window.location.href = "mailto:know.your.doc@tutamail.com";
 }
