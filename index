@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow"> 
+    <title>WhereIAm</title> 
+    <meta name="author" content="KYD [know.your.doc]">
+    <meta name="keywords" content="poetry, image, music, gps, fediverso">
+    <meta name="description" content="KYD Webpage">
+    <meta property="og:title" content="KYD Webpage">
+    <meta property="og:description" content="Where[I]Am-coordinate esistenziali per non perdermi">
+    <meta property="og:image" content="https://www.example.com/immagine-di-anteprima.jpg">
+    <meta property="og:url" content="https://www.example.com/la-mia-pagina">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Where[I]Am">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KYD Webpage">
+    <meta name="twitter:description" content="Where[I]Am-coordinate esistenziali per non perdermi">
+    <meta name="twitter:image" content="https://www.example.com/immagine-di-anteprima-twitter.jpg">
+    <meta http-equiv="refresh" content="300; url=https://kydavide.github.io/whereiam/mystery">
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 5px;
+        padding: 5px;
+      }
+      body {
+        font-family: "Courier New", monospace;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+      header, footer {
+        width: 100%;
+        padding: 20px;
+        background-color: #22acdd;
+        color: #fff;
+        border: 3px solid #fbe206;
+        border-radius: 8px;
+      }
+      main {
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 3px solid #fbe206;
+        border-radius: 8px;
+      }
+      #coordinate {
+        margin-bottom: 20px;
+        background-color: #dc3545;
+        color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        border: 3px solid #fbe206;
+      }
+      #image img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        max-height: 300px;
+        border-radius: 50%;
+        border: 3px solid #22acdd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+      }
+      #text {
+        margin-top: 20px;
+      }
+      #contact-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 3px solid #22acdd;
+        background-color: #fbe206;
+        color: #22acdd;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+    </style>
+</head>
+<body>
+    <header>    
+        <h1>Where[I]Am</h1>
+        <p>Coordinate esistenziali per non perdermi</p>
+    </header>
+    <main>
+        <section id="coordinate">
+            <h4 id="date-time">Data e Ora: Caricamento...</h4>
+            <h4 id="location">Posizione: Caricamento...</h4>
+        </section>
+        <section id="image">
+            <img src="today.jpg" alt="La foto del giorno">
+        </section>
+        <section id="text">
+            <p>Nel contesto della paradigmaticità programmatica,
+            è imperativo considerare l'integrazione multifattoriale delle architetture a microservizi con le interfacce di programmazione applicativa (API), per garantire un'ottimizzazione sinergica dei pattern architetturali e dei modelli di design emergenti. La convergenza tra l'approccio funzionale e quello orientato agli oggetti facilita l'implementazione delle strategie di refactoring attraverso l'adozione di principi SOLID e l'astrazione dei dati mediante le classi generiche e i tipi polimorfici. Questo consente un'elaborazione asincrona dei task, sfruttando il concurrency model del linguaggio di programmazione prescelto e la gestione degli errori tramite meccanismi di exception handling avanzati. In tale contesto, l'adozione di framework e librerie per la manipolazione dei dati e l'implementazione dei micro-frameworks web contribuisce significativamente alla riduzione della latenza e alla scalabilità delle soluzioni software, incrementando la performance complessiva e l'affidabilità del sistema nel contesto dell'ecosistema cloud-native e dell'infrastruttura distribuita.</p>
+        </section>    
+    </main>
+    <footer>
+        <p>KYD-2024</p>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <button id="contact-button" onclick="window.location.href='mailto:know.your.doc@tutamail.com'">✉️</button>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const imgElement = document.querySelector("#image img");
+
+            imgElement.addEventListener("load", function() {
+                EXIF.getData(imgElement, function() {
+                    const dateTime = EXIF.getTag(this, "DateTime");
+                    const lat = EXIF.getTag(this, "GPSLatitude");
+                    const lon = EXIF.getTag(this, "GPSLongitude");
+
+                    if (dateTime) {
+                        document.getElementById("date-time").textContent = dateTime;
+                    }
+                    if (lat && lon) {
+                        document.getElementById("location").textContent = `${lat}, ${lon}`;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
