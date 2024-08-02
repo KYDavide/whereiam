@@ -3,6 +3,7 @@ h1, h2, p {
     background-color: rgb(255, 193, 7);
 }
 body {
+    user-select: none;
     font-family: monospace;
     display: flex;
     flex-direction: column;
