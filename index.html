@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="Where[I]Am-coordinate esistenziali per non perdermi">
     <meta name="twitter:image" content="https://www.example.com/immagine-di-anteprima-twitter.jpg"> <!-- Inserire l'URL dell'immagine di Twitter -->
     <!-- Refresh della pagina ogni 600 secondi -->
-    <meta http-equiv="refresh" content="600; url=https://www.example.com/la-mia-pagina"> <!-- Inserire l'URL della pagina -->
+    <meta http-equiv="refresh" content="300; url=https://kydavide.github.io/whereiam/mystery"> <!-- Inserire l'URL della pagina -->
     <!-- CSS -->
     <style>
       header {
@@ -34,7 +34,7 @@
         padding: 20px;
         text-align: center;
         background-color: #fbe206;
-        border: 1px solid #22acdd;
+        border: 1px solid #fbe206;
         border-radius: 8px;
       }
       body {
@@ -45,36 +45,41 @@
         padding: 20px;
         text-align: center;
         background-color: #000000;
-        border: 1px solid #22acdd;
+        border: 1px solid #fbe206;
         border-radius: 8px;
       }
       main {
         flex: 1;
       }
       #coordinate {
-        max-width: 100%;
+        max-width: 300px;
         font-family: "Courier New", monospace;
         font-size: 13px;
-        line-height: normal;
+        line-height: 5px;
         margin: 0px;
-        padding: 5px;
-        text-align: center;
-        background: #fbe206;
-        border: 1px solid #22acdd;
+        padding: 0px;
+        text-align: center;#dc3545
+        background: #dc3545;
+        border: 1px solid #fbe206;
         border-radius: 8px;
       }
-        #image {
-        max-width: 300px;
-        max-hight: 300px;
-        clip-path: circle(50%);
-        margin: 0px;
-        padding: 20px;
-        text-align: center;
-        background: #fff;
-        border: 1px solid #22acdd;
-        border-radius: 50%;   
-        }
-            
+#image {
+    max-width: 200px;
+    max-height: 200px;
+    clip-path: circle(50%);
+    margin: 0 auto; /* Centra l'immagine orizzontalmente */
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #22acdd;
+    border-radius: 50%;   
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra l'immagine verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
+    }   
       footer {
         font-family: "Courier New", monospace;
         font-size: 13px;
