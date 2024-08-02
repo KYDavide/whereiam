@@ -2,23 +2,99 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Know Your Doc Webpage">
-    <meta name="keywords" content="GPS, image, music, poetry">
-    <meta name="author" content="Davide Brualdi">
-    <title>WhereIAm</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Richiesta di non indicizzare e non seguire i link interni -->
+    <meta name="robots" content="noindex, nofollow"> 
+    <title>WhereIAm</title> 
+    <!-- Meta Tag miei -->
+    <meta name="author" content="KYD [know.your.doc]">
+    <meta name="keywords" content="poetry, image, music, gps, fediverso">
+    <meta name="description" content="KYD Webpage">
+    <!-- Open Graph Meta Tags per Mastodon -->
+    <meta property="og:title" content="KYD Webpage">
+    <meta property="og:description" content="Where[I]Am-coordinate esistenziali per non perdermi">
+    <meta property="og:image" content="https://www.example.com/immagine-di-anteprima.jpg"> <!-- Inserire l'URL della pagina -->
+    <meta property="og:url" content="https://www.example.com/la-mia-pagina"> <!-- Inserire l'URL della pagina -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Where[I]Am">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KYD Webpage">
+    <meta name="twitter:description" content="Where[I]Am-coordinate esistenziali per non perdermi">
+    <meta name="twitter:image" content="https://www.example.com/immagine-di-anteprima-twitter.jpg"> <!-- Inserire l'URL dell'immagine di Twitter -->
+    <!-- Refresh della pagina ogni 600 secondi -->
+    <meta http-equiv="refresh" content="600; url=https://www.example.com/la-mia-pagina"> <!-- Inserire l'URL della pagina -->
+    <!-- CSS -->
+    <style>
+      header {
+        font-family: "Courier New", monospace;
+        font-size: 16px;
+        line-height: normal;
+        margin: 0px;
+        padding: 20px;
+        text-align: center;
+        background-color: #f4f4f4;
+      }
+      body {
+        font-family: "Courier New", monospace;
+        font-size: 13px;
+        line-height: normal;
+        margin: 0px;
+        padding: 20px;
+        text-align: center;
+        background-color: #f4f4f4;
+      }
+      main {
+        flex: 1;
+      }
+      #coordinate {
+        max-width: 80%;
+        margin: 0px;
+        padding: 20px;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+      footer {
+        font-family: "Courier New", monospace;
+        font-size: 13px;
+        line-height: normal;
+        margin: 0px;
+        padding: 20px;
+        text-align: center;
+        background-color: #f4f4f4;
+      }
+    </style>
 </head>
 <body>
-    <div class="title">
-        <main>
+    <!-- HEADER -->
+    <header>    
+        <div id="title">
             <h1>Where[I]Am</h1>
-            <p>coordinate esistenziali per non perdermi</p>
-    <div id="head"></div>
-    <div id="content"></div>
-        </main>main>
-<footer>KYD 2024</footer>
-    <script src="script.js"></script>
+            <p>Coordinate esistenziali per non perdermi</p>
+        </div>
+    </header>
+    <!-- BODY -->
+    <main>
+        <section>
+            <div id="coordinate">
+                <h3>LUOGO|00:00|00/00/00|41.40338, 2.17403</h3>   
+            </div>
+        </section>
+        <section>
+            <div id="image">
+                <img src="today.jpg" alt="la foto del giorno">
+            </div>
+        </section>
+        <section>
+            <div id="text">
+                <p>Nel contesto della paradigmaticità programmatica,
+                è imperativo considerare l'integrazione multifattoriale delle architetture a microservizi con le interfacce di programmazione applicativa (API), per garantire un'ottimizzazione sinergica dei pattern architetturali e dei modelli di design emergenti. La convergenza tra l'approccio funzionale e quello orientato agli oggetti facilita l'implementazione delle strategie di refactoring attraverso l'adozione di principi SOLID e l'astrazione dei dati mediante le classi generiche e i tipi polimorfici. Questo consente un'elaborazione asincrona dei task, sfruttando il concurrency model del linguaggio di programmazione prescelto e la gestione degli errori tramite meccanismi di exception handling avanzati. In tale contesto, l'adozione di framework e librerie per la manipolazione dei dati e l'implementazione dei micro-frameworks web contribuisce significativamente alla riduzione della latenza e alla scalabilità delle soluzioni software, incrementando la performance complessiva e l'affidabilità del sistema nel contesto dell'ecosistema cloud-native e dell'infrastruttura distribuita.</p>
+            </div>
+        </section>    
+    </main>
+    <!-- FOOTER -->
+    <footer>KYD 2024</footer>
 </body>
 </html>
