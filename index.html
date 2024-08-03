@@ -97,58 +97,42 @@
 
     <script>
         function loadImageAndExtractMetadata() {
-            const extensions = ['.jpg', '.jpeg', '.png'];
+    // Specifica il percorso dell'immagine direttamente
+    const imgSrc = 'IMG_20240803_070411.jpg'; // Inserisci qui il nome esatto del file immagine
+    const img = new Image();
+    img.src = imgSrc;
+    img.onload = () => {
+        document.getElementById('image-container').appendChild(img);
+        extractMetadata(imgSrc);
+    };
+}
 
-            // Richiesta AJAX per ottenere la lista dei file nella directory
-            fetch('./').then(response => response.text()).then(text => {
-                const parser = new DOMParser();
-                const htmlDocument = parser.parseFromString(text, "text/html");
-                const images = Array.from(htmlDocument.querySelectorAll("a"))
-                    .map(link => link.getAttribute("href"))
-                    .filter(href => extensions.some(ext => href.endsWith(ext)));
+function extractMetadata(imageSrc) {
+    const img = new Image();
+    img.src = imageSrc;
+    img.onload = () => {
+        EXIF.getData(img, function() {
+            const date = EXIF.getTag(this, "DateTimeOriginal");
+            const lat = EXIF.getTag(this, "GPSLatitude");
+            const lon = EXIF.getTag(this, "GPSLongitude");
 
-                if (images.length > 0) {
-                    const imgSrc = images[0]; // Prendi la prima immagine trovata
-                    const img = new Image();
-                    img.src = imgSrc;
-                    img.onload = () => {
-                        document.getElementById('image-container').appendChild(img);
-                        extractMetadata(imgSrc);
-                    };
-                } else {
-                    console.log('Nessuna immagine trovata');
-                    document.getElementById('metadata').innerText = "Nessuna immagine trovata.";
-                }
-            });
-        }
+            if (date && lat && lon) {
+                const latRef = EXIF.getTag(this, "GPSLatitudeRef") || "N";
+                const lonRef = EXIF.getTag(this, "GPSLongitudeRef") || "E";
 
-        function extractMetadata(imageSrc) {
-            const img = new Image();
-            img.src = imageSrc;
-            img.onload = () => {
-                EXIF.getData(img, function() {
-                    const date = EXIF.getTag(this, "DateTimeOriginal");
-                    const lat = EXIF.getTag(this, "GPSLatitude");
-                    const lon = EXIF.getTag(this, "GPSLongitude");
+                const latitude = (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1);
+                const longitude = (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1);
 
-                    if (date && lat && lon) {
-                        const latRef = EXIF.getTag(this, "GPSLatitudeRef") || "N";
-                        const lonRef = EXIF.getTag(this, "GPSLongitudeRef") || "E";
-
-                        const latitude = (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1);
-                        const longitude = (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1);
-
-                        const metadata = `${date} | ${latitude.toFixed(6)}, ${longitude.toFixed(6)} | <a href="https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}" target="_blank">Visualizza su OSM</a>`;
-                        document.getElementById('metadata').innerHTML = metadata;
-                    } else {
-                        document.getElementById('metadata').innerHTML = "Metadati non disponibili.";
-                    }
-                });
-            };
-        }
-
-        // Carica l'immagine e i metadati al caricamento della pagina
-        loadImageAndExtractMetadata();
+                const metadata = `${date} | ${latitude.toFixed(6)}, ${longitude.toFixed(6)} | <a href="https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}" target="_blank">Visualizza su OSM</a>`;
+                document.getElementById('metadata').innerHTML = metadata;
+            } else {
+                document.getElementById('metadata').innerHTML = "Metadati non disponibili.";
+            }
+        });
+    };
+}
+// Carica l'immagine e i metadati al caricamento della pagina
+loadImageAndExtractMetadata();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
 </body>
