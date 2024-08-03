@@ -3,149 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow"> 
+    <meta name="robots" content="noindex, nofollow">
     <title>WhereIAm</title> 
     <meta name="author" content="KYD [know.your.doc]">
     <meta name="keywords" content="poetry, image, music, gps, fediverso">
     <meta name="description" content="KYD Webpage">
     <meta property="og:title" content="KYD Webpage">
     <meta property="og:description" content="Where[I]Am-coordinate esistenziali per non perdermi">
-    <meta property="og:image" content="https://www.example.com/immagine-di-anteprima.jpg"> 
-    <meta property="og:url" content="https://www.example.com/la-mia-pagina"> 
+    <meta property="og:image" content="https://www.example.com/immagine-di-anteprima.jpg">
+    <meta property="og:url" content="https://www.example.com/la-mia-pagina">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Where[I]Am">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="KYD Webpage">
     <meta name="twitter:description" content="Where[I]Am-coordinate esistenziali per non perdermi">
     <meta name="twitter:image" content="https://www.example.com/immagine-di-anteprima-twitter.jpg">
-    <meta http-equiv="refresh" content="300; url=https://kydavide.github.io/whereiam/sorpresa"> 
-    <!-- CSS -->
+    <meta http-equiv="refresh" content="300; url=https://kydavide.github.io/whereiam/mystery">
     <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        font-family: "Courier New", monospace;
-        font-size: 13px;
-        line-height: normal;
-        text-align: center;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      header, footer {
-        width: 100%;
-        max-width: 600px;
-        padding: 20px;
-        text-align: center;
-        background-color: #22acdd;
-        border: 3px solid #fbe206;
-        border-radius: 8px;
-        margin: 5px;
-      }
-      #coordinate {
-        max-width: 600px;
-        margin: 5px;
-        padding: 20px;
-        text-align: center;
-        background: #dc3545;
-        border: 3px solid #fbe206;
-        border-radius: 8px;
-      }
-      #image-container {
-        max-width: 300px;
-        max-height: 300px;
-        margin: 5px;
-        padding: 0;
-        background: #fff;
-        border-radius: 50%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        overflow: hidden; /* Nasconde le parti dell'immagine fuori dal cerchio */
-      }
-      #image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Assicura che l'immagine riempia il contenitore */
-        clip-path: circle(50%);
-      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Courier New", monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            text-align: center;
+            background-color: #fff;
+            border: 3px solid #dc3545;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 5px;
+        }
+        header, footer {
+            background-color: #17a2b8;
+            padding: 20px;
+            border: 3px solid #17a2b8;
+            border-radius: 8px;
+            color: #fff;
+        }
+        #coordinate {
+            background-color: #ffc107;
+            border: 3px solid #dc3545;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        #image-container {
+            max-width: 300px;
+            max-height: 300px;
+            clip-path: circle(50%);
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 20px auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <!-- HEADER -->
-    <header>    
+    <header>
         <div id="title">
             <h1>Where[I]Am</h1>
             <p>Coordinate esistenziali per non perdermi</p>
         </div>
     </header>
+
     <!-- BODY -->
     <main>
-        <section>
-            <div id="coordinate">
-                <h4>GITHUB|00:00|00/00/00|00.00000, 00.00000</h4>   
-            </div>
+        <section id="coordinate">
+            <h4 id="metadata">Caricamento dati...</h4>
         </section>
         <section>
-            <div id="image-container"></div>
-        </section>
-        <section>
-            <div id="text">
-                <p>Nel contesto della paradigmaticità programmatica,
-                è imperativo considerare l'integrazione multifattoriale delle architetture a microservizi con le interfacce di programmazione applicativa (API), per garantire un'ottimizzazione sinergica dei pattern architetturali e dei modelli di design emergenti. La convergenza tra l'approccio funzionale e quello orientato agli oggetti facilita l'implementazione delle strategie di refactoring attraverso l'adozione di principi SOLID e l'astrazione dei dati mediante le classi generiche e i tipi polimorfici. Questo consente un'elaborazione asincrona dei task, sfruttando il concurrency model del linguaggio di programmazione prescelto e la gestione degli errori tramite meccanismi di exception handling avanzati. In tale contesto, l'adozione di framework e librerie per la manipolazione dei dati e l'implementazione dei micro-frameworks web contribuisce significativamente alla riduzione della latenza e alla scalabilità delle soluzioni software, incrementando la performance complessiva e l'affidabilità del sistema nel contesto dell'ecosistema cloud-native e dell'infrastruttura distribuita.</p>
+            <div id="image-container">
+                <!-- L'immagine verrà inserita qui dallo script -->
             </div>
-        </section>    
+        </section>
     </main>
+
     <!-- FOOTER -->
     <footer>
-        <a href="privacy.html">Privacy Policy</a> | 
-        <a href="mailto:know.your.doc@tutamail.com">Contattami</a>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+        <p><a href="mailto:know.your.doc@tutamail.com">Contattami</a></p>
     </footer>
-    <!-- Includi la libreria EXIF -->
-    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+
     <script>
-        function loadImage() {
-            const supportedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
-            const imageContainer = document.getElementById('image-container');
-            const coordinateDiv = document.getElementById('coordinate');
+        function loadImageAndExtractMetadata() {
+            const extensions = ['.jpg', '.jpeg', '.png'];
 
-            supportedExtensions.forEach(ext => {
-                const img = new Image();
-                img.src = 'today' + ext;
-                img.onerror = () => console.log('File non trovato: ' + img.src);
-                img.onload = () => {
-                    img.id = 'image';
-                    imageContainer.innerHTML = ''; // Pulisce il contenitore
-                    imageContainer.appendChild(img);
+            // Richiesta AJAX per ottenere la lista dei file nella directory
+            fetch('./').then(response => response.text()).then(text => {
+                const parser = new DOMParser();
+                const htmlDocument = parser.parseFromString(text, "text/html");
+                const images = Array.from(htmlDocument.querySelectorAll("a"))
+                    .map(link => link.getAttribute("href"))
+                    .filter(href => extensions.some(ext => href.endsWith(ext)));
 
-                    // Estrai i metadati EXIF e visualizza le coordinate
-                    EXIF.getData(img, function() {
-                        const lat = EXIF.getTag(this, "GPSLatitude");
-                        const lon = EXIF.getTag(this, "GPSLongitude");
-                        const latRef = EXIF.getTag(this, "GPSLatitudeRef");
-                        const lonRef = EXIF.getTag(this, "GPSLongitudeRef");
-
-                        if (lat && lon) {
-                            const latDecimal = convertToDecimal(lat, latRef);
-                            const lonDecimal = convertToDecimal(lon, lonRef);
-                            coordinateDiv.innerHTML = `<h4>Coordinate: ${latDecimal}, ${lonDecimal}</h4>`;
-                        } else {
-                            coordinateDiv.innerHTML = "<h4>Coordinate GPS non trovate nei metadati dell'immagine.</h4>";
-                        }
-                    });
-                };
+                if (images.length > 0) {
+                    const imgSrc = images[0]; // Prendi la prima immagine trovata
+                    const img = new Image();
+                    img.src = imgSrc;
+                    img.onload = () => {
+                        document.getElementById('image-container').appendChild(img);
+                        extractMetadata(imgSrc);
+                    };
+                } else {
+                    console.log('Nessuna immagine trovata');
+                    document.getElementById('metadata').innerText = "Nessuna immagine trovata.";
+                }
             });
         }
 
-        function convertToDecimal(coord, ref) {
-            let decimal = coord[0] + coord[1]/60 + coord[2]/3600;
-            if (ref === "S" || ref === "W") {
-                decimal = decimal * -1;
-            }
-            return decimal.toFixed(6); // Ritorna le coordinate con 6 cifre decimali
+        function extractMetadata(imageSrc) {
+            const img = new Image();
+            img.src = imageSrc;
+            img.onload = () => {
+                EXIF.getData(img, function() {
+                    const date = EXIF.getTag(this, "DateTimeOriginal");
+                    const lat = EXIF.getTag(this, "GPSLatitude");
+                    const lon = EXIF.getTag(this, "GPSLongitude");
+
+                    if (date && lat && lon) {
+                        const latRef = EXIF.getTag(this, "GPSLatitudeRef") || "N";
+                        const lonRef = EXIF.getTag(this, "GPSLongitudeRef") || "E";
+
+                        const latitude = (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1);
+                        const longitude = (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1);
+
+                        const metadata = `${date} | ${latitude.toFixed(6)}, ${longitude.toFixed(6)} | <a href="https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}" target="_blank">Visualizza su OSM</a>`;
+                        document.getElementById('metadata').innerHTML = metadata;
+                    } else {
+                        document.getElementById('metadata').innerHTML = "Metadati non disponibili.";
+                    }
+                });
+            };
         }
 
-        loadImage();
+        // Carica l'immagine e i metadati al caricamento della pagina
+        loadImageAndExtractMetadata();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
 </body>
 </html>
