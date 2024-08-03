@@ -14,11 +14,11 @@
             border: 3px solid #343a40;
             border-radius: 8px;
             max-width: 600px;
-            margin: 20px auto;
+            margin: 10px auto;
         }
         header {
             background-color: #fff;
-            padding: 20px;
+            padding: 10px;
             border: 3px solid #343a40;
             border-radius: 8px;
         }
@@ -27,7 +27,7 @@
         }
         #audio-container {
             background-color: #e83e8c; /* Colore di sfondo per il box del lettore audio */
-            padding: 15px;
+            padding: 10px;
             border-radius: 8px;
             margin-bottom: 20px;
             text-align: center;
@@ -66,18 +66,15 @@
     <header>    
         <h1>Mystery</h1>
     </header>
-
     <main>
         <div id="audio-container">
             <!-- Lettore audio verrà inserito qui -->
         </div>
-        
         <!-- Testo visualizzato -->
         <div id="text">
             <p>Sei giunto nella sezione segreta, ciè vuol dire che ti sei soffermato più di 3 minuti sul mio testo!</p>
             <p>spero che la mia interpretazione ti piaccia.</p>
         </div>
-
         <div class="ko-fi">
             <p>Se ti è piaciuto il contenuto, considera di offrirmi un ko-fi per sostenere il progetto.</p>
             <a href="https://ko-fi.com/" target="_blank">
@@ -85,13 +82,11 @@
             </a>
         </div>
     </main>
-
     <footer>
         <p>KYD 2024</p>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="index.html">Indietro</a>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+        <p><a href="index.html">Indietro</a></p>
     </footer>
-
     <script>
         function loadAudio() {
             const audioFile = 'Sound record (2024-06-22 03_28_25).wav'; // Nome del file audio
@@ -99,12 +94,9 @@
             audio.controls = true;
             audio.autoplay = true; // Avvia automaticamente la riproduzione
             audio.src = audioFile;
-
             audio.onerror = () => console.log('File non trovato: ' + audio.src);
-
             document.getElementById('audio-container').appendChild(audio);
         }
-
         loadAudio();
     </script>
 </body>
