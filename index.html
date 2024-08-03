@@ -27,19 +27,17 @@
         }
         body {
             font-family: "Courier New", monospace;
-            font-size: 13px;
-            line-height: 1.5;
             text-align: center;
             background-color: #fff;
             border: 3px solid #343a40;
             border-radius: 8px;
             max-width: 600px;
-            margin: 20px auto;
-            padding: 5px;
+            margin: 10px auto;
+            padding: 10px;
         }
-        header, footer {
+        header {
             background-color: #fff;
-            padding: 20px;
+            padding: 10px;
             border: 3px solid #fff;
             border-radius: 8px;
         }
@@ -73,19 +71,21 @@
             margin: 10px auto;
             text-align: center;
             font-family: "Courier New", monospace;
-            font-size: 13px;
-            line-height: 1.5;
-
         }
+        footer {
+            background-color: #17a2b8;
+            padding: 10px;
+            border: 3px solid #fff;
+            border-radius: 8px;
         a {
-            color: #343a40; /* Colore bianco per tutti i link */
+            color: #fff; /* Colore "nero" per tutti i link */
             text-decoration: none; /* Rimuove la sottolineatura dai link */
         }
         a:hover {
             text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
         }
         footer a {
-            color: ##343a40; /* Colore verde per i link nel footer */
+            color: #fff; /* Colore bianco per i link nel footer */
             text-decoration: none; /* Rimuove la sottolineatura dai link nel footer */
         }
         footer a:hover {
@@ -105,7 +105,7 @@
     <!-- BODY -->
     <main>
         <section id="coordinate">
-            <h4 id="metadata">Caricamento dati...</h4>
+            <div id="metadata">Caricamento dati...</div>
         </section>
         <section>
             <div id="image-container">
@@ -113,7 +113,7 @@
             </div>
         </section>
         <section id="poetry">
-            <h2>[3]</h2>
+            <h1>[3]</h1>
             <p>
                 Questi sono i versi della prova della poesia.<br>
                 E si, tre un numero perfetto<br>
