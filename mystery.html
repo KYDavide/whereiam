@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery</title>
+    <style>
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+            background-color: #f4f4f4;
+            border: 3px solid #22acdd;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        header, footer {
+            background-color: #17a2b8;
+            padding: 20px;
+            border: 3px solid #22acdd;
+            border-radius: 8px;
+            color: #fff;
+        }
+        main {
+            margin-top: 20px;
+        }
+        #text {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .ko-fi {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>    
+        <h1>Mystery</h1>
+    </header>
+
+    <main>
+        <!-- Testo ripreso da index.html -->
+        <div id="text">
+            <p>Nel contesto della paradigmaticità programmatica, è imperativo considerare l'integrazione multifattoriale delle architetture a microservizi con le interfacce di programmazione applicativa (API), per garantire un'ottimizzazione sinergica dei pattern architetturali e dei modelli di design emergenti. La convergenza tra l'approccio funzionale e quello orientato agli oggetti facilita l'implementazione delle strategie di refactoring attraverso l'adozione di principi SOLID e l'astrazione dei dati mediante le classi generiche e i tipi polimorfici. Questo consente un'elaborazione asincrona dei task, sfruttando il concurrency model del linguaggio di programmazione prescelto e la gestione degli errori tramite meccanismi di exception handling avanzati. In tale contesto, l'adozione di framework e librerie per la manipolazione dei dati e l'implementazione dei micro-frameworks web contribuisce significativamente alla riduzione della latenza e alla scalabilità delle soluzioni software, incrementando la performance complessiva e l'affidabilità del sistema nel contesto dell'ecosistema cloud-native e dell'infrastruttura distribuita.</p>
+        </div>
+        
+        <div id="audio-container">
+            <!-- Lettore audio verrà inserito qui -->
+        </div>
+
+        <div class="ko-fi">
+            <p>Grazie per essere arrivato fin qui! Se ti è piaciuto il contenuto, considera di offrirmi un ko-fi.</p>
+            <a href="https://ko-fi.com/" target="_blank">
+                <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=2" alt="Ko-fi button">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>KYD 2024</p>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+
+    <script>
+        function loadAudio() {
+            const extensions = ['.mp3', '.ogg', '.wav'];
+            let audioLoaded = false;
+
+            extensions.forEach(ext => {
+                if (!audioLoaded) {
+                    const audio = document.createElement('audio');
+                    audio.controls = true;
+                    audio.src = 'your-audio-file' + ext;
+
+                    audio.onerror = () => console.log('File non trovato: ' + audio.src);
+
+                    audio.onloadeddata = () => {
+                        document.getElementById('audio-container').appendChild(audio);
+                        audioLoaded = true; // Ferma la ricerca se un file è stato trovato
+                    };
+                }
+            });
+        }
+
+        loadAudio();
+    </script>
+</body>
+</html>
