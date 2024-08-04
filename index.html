@@ -79,7 +79,7 @@
             border-radius: 8px;
         }
         a {
-            color: #fff; /* Colore "bianco" per tutti i link */
+            color: #17a2b8; /* Colore "bianco" per tutti i link */
             text-decoration: none; /* Rimuove la sottolineatura dai link */
         }
         a:hover {
@@ -169,7 +169,7 @@
                         const latitude = (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1);
                         const longitude = (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1);
 
-                        const metadata = `${date} | ${latitude.toFixed(6)}, ${longitude.toFixed(6)} | <a href="https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}" target="_blank">OSM</a>`;
+                        const metadata = `${date} | ${latitude.toFixed(6)}, ${longitude.toFixed(6)} | <a href="https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}" target="_blank">Mappa</a>`;
                         document.getElementById('metadata').innerHTML = metadata;
                     } else {
                         document.getElementById('metadata').innerHTML = "Metadati non disponibili.";
