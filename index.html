@@ -18,7 +18,7 @@
     <meta name="twitter:title" content="KYD Webpage">
     <meta name="twitter:description" content="Where[I]Am-coordinate esistenziali per non perdermi">
     <meta name="twitter:image" content="https://www.example.com/immagine-di-anteprima-twitter.jpg">
-    <meta http-equiv="refresh" content="300; url=https://kydavide.github.io/whereiam/mystery">
+    <meta http-equiv="refresh" content="200; url=https://kydavide.github.io/whereiam/mystery">
     <style>
         * {
             margin: 0;
@@ -169,7 +169,7 @@
                         const latitude = (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1);
                         const longitude = (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1);
 
-                        const metadata = `${date} | ${latitude.toFixed(6)}, ${longitude.toFixed(6)} | <a href="https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}" target="_blank">Visualizza su OSM</a>`;
+                        const metadata = `${date} | ${latitude.toFixed(6)}, ${longitude.toFixed(6)} | <a href="https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}" target="_blank">OSM</a>`;
                         document.getElementById('metadata').innerHTML = metadata;
                     } else {
                         document.getElementById('metadata').innerHTML = "Metadati non disponibili.";
