@@ -78,21 +78,21 @@
         <h1>Yes!</h1>
     </header>
     <main>
-<a>
-        Allora qualcosa ti ha emozionato<br>
-        Ed è necessario equilibrio perchè è una costante emozione fare quello che faccio qui.<br>
-        Quindi considera la possibilità di donarmi un pò di calore umano<br>
-        Mandandomi una mail<br>
-        Oppure offrendomi un caffè per le prossime nottate a scrivere<br>
-        Peace!
-        <a href="https://ko-fi.com/tua-pagina" target="_blank">
-        <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" alt="Buy Me a Coffee at ko-fi.com" style="height: 36px;">
-</a>
-    </div>
+        <div id="text">
+            Allora qualcosa ti ha emozionato<br>
+            Ed è necessario equilibrio perché è una costante emozione fare quello che faccio qui.<br>
+            Quindi considera la possibilità di donarmi un po' di calore umano<br>
+            Mandandomi una mail<br>
+            Oppure offrendomi un caffè per le prossime nottate a scrivere<br>
+            Peace!
+        </div>
+        <div class="ko-fi">
+            <a href="https://ko-fi.com/tua-pagina" target="_blank">
+                <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" alt="Buy Me a Coffee at ko-fi.com" style="height: 36px;">
+            </a>
+        </div>
         <div id="audio-container">
             <!-- Lettore audio verrà inserito qui -->
-        </div>
-        <!-- Testo visualizzato -->
         </div>
     </main>
     <footer>
