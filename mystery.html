@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,59 @@
             padding: 10px;
             border: 3px solid #343a40;
             border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .option {
+            margin: 10px 0;
+        }
+        .option label {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #ff5f5f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;h2 {
+            text-align: center;
+            color: #333;
+        }
+        .option {
+            margin: 10px 0;
+        }
+        .option label {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #ff5f5f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+        .submit-btn:hover {
+            background-color: #ff3f3f;
+        }
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+        .submit-btn:hover {
+            background-color: #ff3f3f;
         }
         #audio-container {
             background-color: #e83e8c; /* Colore di sfondo per il box del lettore audio */
@@ -66,21 +119,24 @@
         <h1>Mystery</h1>
     </header>
     <main>
+        <div class="container">
+        <h2>Sei arrivato qui perché</h2>
+        <form onsubmit="handleSubmit(event)">
+            <div class="option">
+                <input type="radio" id="option1" name="reason" value="ho letto il testo" required>
+                <label for="option1">Ho letto il testo, quindi l'ho riletto una seconda volta con particolare passione e mi è spuntata questa pagina</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option2" name="reason" value="avevo il browser aperto">
+                <label for="option2">Avevo semplicemente il browser aperto e mi è comparsa</label>
+            </div>
+            <button type="submit" class="submit-btn">Sinceramente!</button>
+        </form>
+    </div>
         <div id="audio-container">
             <!-- Lettore audio verrà inserito qui -->
         </div>
         <!-- Testo visualizzato -->
-        <div id="text">
-            <p>Ben arrivato! Vuol dire che ti sei soffermato più di 3 minuti sul mio testo!</p>
-            <p>O che ti sei letto la privacy e hai spulciato nella pagina</p>
-            <p>spero che la mia interpretazione ti piaccia :)</p>
-            Se vuoi mandarmi 
-        </div>
-        <div class="ko-fi">
-            <p>Se ti è piaciuto il contenuto, considera di offrirmi un ko-fi per sostenere il progetto (funzione non ancora implementata).</p>
-            <!--<a href="https://ko-fi.com/" target="_blank">
-                <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=2" alt="Ko-fi button">
-            </a>-->
         </div>
     </main>
     <footer>
@@ -99,6 +155,19 @@
             document.getElementById('audio-container').appendChild(audio);
         }
         loadAudio();
+    </script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Previene l'invio del form
+            const option1 = document.getElementById('option1');
+            const option2 = document.getElementById('option2');
+
+            if (option1.checked) {
+                window.location.href = 'https://kydavide.github.io/whereiam/mystery';
+            } else if (option2.checked) {
+                window.location.href = 'https://www.google.com/maps/contrib/115816863351705293573/photos/@34.2194497,-118.4495888,3a,75y,90t/data=!3m7!1e2!3m5!1sAF1QipMF1lKuWShyZgesjnDAYO_L19aD-D3c1XQK0U2Q!2e10!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMF1lKuWShyZgesjnDAYO_L19aD-D3c1XQK0U2Q%3Dw365-h263-k-no!7i2021!8i1461!4m3!8m2!3m1!1e1?entry=ttu';
+            }
+        }
     </script>
 </body>
 </html>
