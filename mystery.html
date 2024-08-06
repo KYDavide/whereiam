@@ -37,27 +37,13 @@
             margin-left: 10px;
             cursor: pointer;
         }
-        .submit-btn {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #ff5f5f;
-            color: #fff;
-            border: none;
-            border-radius: 5px;h2 {
-            text-align: center;
-            color: #333;
-        }
-        .option {
-            margin: 10px 0;
-        }
-        .option label {
-            margin-left: 10px;
-            cursor: pointer;
+        .submit-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
         .submit-btn {
-            display: block;
-            width: 100%;
+            width: 140px;
             padding: 10px;
             background-color: #ff5f5f;
             color: #fff;
@@ -65,15 +51,6 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            margin-top: 20px;
-            text-transform: uppercase;
-        }
-        .submit-btn:hover {
-            background-color: #ff3f3f;
-        }
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
             text-transform: uppercase;
         }
         .submit-btn:hover {
@@ -110,7 +87,9 @@
                 <input type="radio" id="option2" name="reason" value="avevo il browser aperto">
                 <label for="option2">Avevo semplicemente il browser aperto e mi è comparsa</label>
             </div>
-            <button type="submit" class="submit-btn">Sinceramente!</button>
+            <div class="submit-container">
+                <button type="submit" class="submit-btn">Sinceramente!</button>
+            </div>
         </form>
     </div>
     </main>
