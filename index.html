@@ -28,8 +28,8 @@
         height: 100%;
         background-image: url('BKGroung1.png');
         background-position: left;
-        background-repeat: no-repeat; /* Previene la ripetizione dell'immagine */
-        background-size: cover; /* Assicura che l'immagine copra l'intero sfondo */
+        background-repeat: no-repeat;
+        background-size: cover;
         }
         * {
         margin: 0;
@@ -65,8 +65,8 @@
             max-width: 300px;
             max-height: 300px;
             background: #fff;
-            border-radius: 0px; /* Rimuove l'angolo arrotondato */
-            border: 0px solid #ff5f5f; /* Mantiene il bordo */
+            border-radius: 0px;
+            border: 0px solid #ff5f5f;
             overflow: hidden;
             margin: 10px auto;
         }
@@ -74,7 +74,7 @@
             max-width: 100%;
             height: auto;
         }
-         #poetry {
+        #poetry {
             background-color: #fff;
             border: 3px solid #fff;
             border-radius: 8px;
@@ -90,18 +90,18 @@
             border-radius: 8px;
         }
         a {
-            color: #17a2b8; /* Colore "bianco" per tutti i link */
-            text-decoration: none; /* Rimuove la sottolineatura dai link */
+            color: #17a2b8;
+            text-decoration: none;
         }
         a:hover {
-            text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
+            text-decoration: underline;
         }
         footer a {
-            color: #fff; /* Colore bianco per i link nel footer */
-            text-decoration: none; /* Rimuove la sottolineatura dai link nel footer */
+            color: #fff;
+            text-decoration: none;
         }
         footer a:hover {
-            text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse sui link nel footer */
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -140,6 +140,9 @@ Respira<br>
 qui<br>
 <br>e sempre<br>
             </p>
+            <div style="margin-top: 20px;">
+                <a href="lo_guarracino.html">🎣 Leggi “Lo Guarracino” (con audio e traduzioni)</a>
+            </div>
         </section>
     </main>
 
@@ -157,8 +160,7 @@ qui<br>
     <!-- Script per caricare l'immagine e estrarre i metadati -->
     <script>
         function loadImageAndExtractMetadata() {
-            // Specifica il percorso dell'immagine direttamente
-            const imgSrc = '2024_08_27.jpg'; // Inserisci qui il nome esatto del file immagine
+            const imgSrc = '2024_08_27.jpg'; // nome file immagine
             const img = new Image();
             img.src = imgSrc;
             img.onload = () => {
@@ -200,7 +202,6 @@ qui<br>
             };
         }
 
-        // Carica l'immagine e i metadati al caricamento della pagina
         loadImageAndExtractMetadata();
     </script>
 </body>
