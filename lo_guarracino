@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Lo Guarracino – Traduzioni | KYD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family:"Courier New", monospace; max-width:800px; margin:auto; padding:20px; background:#fff; }
+    h1, h2 { text-align:center; }
+    .controls { text-align:center; margin:20px; }
+    .lyrics { display:grid; gap:15px; }
+    .lang { display:none; border:1px solid #ccc; padding:15px; background:#f9f9f9; border-radius:8px; }
+    .lang.active { display:block; }
+    .lang h3 { color:#17a2b8; }
+    .commento { margin-top:30px; padding:15px; background:#efefef; border-left:4px solid #17a2b8; }
+    a { text-decoration:none; color:#17a2b8; }
+    a:hover { text-decoration:underline; }
+    pre { white-space:pre-wrap; }
+    audio { width:100%; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h1>Lo Guarracino</h1>
+  <h2>Tarantella napoletana – Traduzione multilingue</h2>
+  <p><a href="index.html">&larr; Torna all’archivio</a></p>
+
+  <div class="controls">
+    <label for="langSelect">Seleziona lingua:</label>
+    <select id="langSelect">
+      <option value="nap">Napoletano</option>
+      <option value="it">Italiano</option>
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
+
+  <div class="player" style="text-align:center;">
+    <audio controls>
+      <source src="audio/lo-guarracino.mp3" type="audio/mpeg">
+      <source src="audio/lo-guarracino.wav" type="audio/wav">
+      Il tuo browser non supporta l'audio HTML5.
+    </audio>
+  </div>
+
+  <div class="lyrics">
+    <div id="nap" class="lang active">
+      <h3>Napoletano</h3>
+      <pre>
+Lo Guarracino che jéva pe mare
+Le venne voglia de se 'nzorare
+Se facette nu bello vestito
+De scarde de spine pulito pulito
+... (testo completo)
+Ma de cantà so già stracquato
+e me manca mo lo sciato
+Sicché dateme licienzia
+... premmóne
+      </pre>
+    </div>
+
+    <div id="it" class="lang">
+      <h3>Italiano</h3>
+      <pre>
+Il pesce Guarracino che nuotava in mare
+decise di sposarsi.
+Si fece un bel vestito
+di scaglie affilate, pulite e ordinate.
+...
+Ma di cantare sono già stanco
+e mi manca il fiato;
+perciò concedetemi una pausa,
+che voglio bere un bicchiere
+alla loro salute,
+altrimenti la gola si secca
+e il polmone mi si svuota.
+      </pre>
+    </div>
+
+    <div id="en" class="lang">
+      <h3>English</h3>
+      <pre>
+The chromis that swam in the sea
+decided to marry.
+He made himself a fine suit
+of sharp, neat scales.
+He donned a curly wig
+studded with cockle-shells...
+... (segue il testo completo)
+But I’m weary of singing now
+and short of breath;
+so give me leave,
+let me drink a glass
+to their health,
+or my throat will parch,
+and my lungs will empty. :contentReference[oaicite:1]{index=1}
+      </pre>
+    </div>
+
+    <div id="fr" class="lang">
+      <h3>Français</h3>
+      <pre>
+Le chromis qui nageait en mer
+décida de se marier.
+Il se fit un bel habit
+d’écailles nettes et piquantes.
+Il porta une perruque bouclée
+ornée de coquilles d’amande...
+... (version française complète)
+Mais je suis trop fatigué pour continuer
+et mon souffle m’abandonne ;
+accordez-moi donc un répit,
+laissez-moi boire un verre
+à leur santé.
+Sinon ma gorge se dessèche
+et mes poumons se vident. :contentReference[oaicite:2]{index=2}
+      </pre>
+    </div>
+
+    <div id="es" class="lang">
+      <h3>Español</h3>
+      <pre>
+El chromis que nadaba en el mar
+decidió casarse.
+Se hizo un traje elegante
+con escamas limpias y afiladas.
+Se colocó una peluca rizada
+adornada con conchitas...
+... (versión completa en español)
+Pero ya estoy cansado de cantar
+y me falta el aliento;
+así que denme licencia,
+déjenme beber un trago
+por su salud;
+si no, mi garganta se seca
+y mis pulmones se vacían. :contentReference[oaicite:3]{index=3}
+      </pre>
+    </div>
+  </div>
+
+  <section class="commento">
+    <strong>Note:</strong>
+    <p><em>Lo Guarracino</em>, datata fine Settecento, racconta in dialetto una grottesca “guerra di Troia subacquea”: il pesce Guarracino, innamorato di una sardina promessa a un altro, scatena un’epica rissa immortale tra creature marine – infine l’interprete si arrende all’esaurimento vocale e chiede un brindisi per riprendere fiato. :contentReference[oaicite:4]{index=4}</p>
+  </section>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Lo Guarracino – Traduzioni | KYD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family:"Courier New", monospace; max-width:800px; margin:auto; padding:20px; background:#fff; }
+    h1, h2 { text-align:center; }
+    .controls { text-align:center; margin:20px; }
+    .lyrics { display:grid; gap:15px; }
+    .lang { display:none; border:1px solid #ccc; padding:15px; background:#f9f9f9; border-radius:8px; }
+    .lang.active { display:block; }
+    .lang h3 { color:#17a2b8; }
+    .commento { margin-top:30px; padding:15px; background:#efefef; border-left:4px solid #17a2b8; }
+    a { text-decoration:none; color:#17a2b8; }
+    a:hover { text-decoration:underline; }
+    pre { white-space:pre-wrap; }
+    audio { width:100%; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h1>Lo Guarracino</h1>
+  <h2>Tarantella napoletana – Traduzione multilingue</h2>
+  <p><a href="index.html">&larr; Torna all’archivio</a></p>
+
+  <div class="controls">
+    <label for="langSelect">Seleziona lingua:</label>
+    <select id="langSelect">
+      <option value="nap">Napoletano</option>
+      <option value="it">Italiano</option>
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+    </select>
+  </div>
+
+  <div class="player" style="text-align:center;">
+    <audio controls>
+      <source src="audio/lo-guarracino.mp3" type="audio/mpeg">
+      <source src="audio/lo-guarracino.wav" type="audio/wav">
+      Il tuo browser non supporta l'audio HTML5.
+    </audio>
+  </div>
+
+  <div class="lyrics">
+    <div id="nap" class="lang active">
+      <h3>Napoletano</h3>
+      <pre>
+Lo Guarracino che jéva pe mare
+Le venne voglia de se 'nzorare
+Se facette nu bello vestito
+De scarde de spine pulito pulito
+... (testo completo)
+Ma de cantà so già stracquato
+e me manca mo lo sciato
+Sicché dateme licienzia
+... premmóne
+      </pre>
+    </div>
+
+    <div id="it" class="lang">
+      <h3>Italiano</h3>
+      <pre>
+Il pesce Guarracino che nuotava in mare
+decise di sposarsi.
+Si fece un bel vestito
+di scaglie affilate, pulite e ordinate.
+...
+Ma di cantare sono già stanco
+e mi manca il fiato;
+perciò concedetemi una pausa,
+che voglio bere un bicchiere
+alla loro salute,
+altrimenti la gola si secca
+e il polmone mi si svuota.
+      </pre>
+    </div>
+
+    <div id="en" class="lang">
+      <h3>English</h3>
+      <pre>
+The chromis that swam in the sea
+decided to marry.
+He made himself a fine suit
+of sharp, neat scales.
+He donned a curly wig
+studded with cockle-shells...
+... (segue il testo completo)
+But I’m weary of singing now
+and short of breath;
+so give me leave,
+let me drink a glass
+to their health,
+or my throat will parch,
+and my lungs will empty. :contentReference[oaicite:1]{index=1}
+      </pre>
+    </div>
+
+    <div id="fr" class="lang">
+      <h3>Français</h3>
+      <pre>
+Le chromis qui nageait en mer
+décida de se marier.
+Il se fit un bel habit
+d’écailles nettes et piquantes.
+Il porta une perruque bouclée
+ornée de coquilles d’amande...
+... (version française complète)
+Mais je suis trop fatigué pour continuer
+et mon souffle m’abandonne ;
+accordez-moi donc un répit,
+laissez-moi boire un verre
+à leur santé.
+Sinon ma gorge se dessèche
+et mes poumons se vident. :contentReference[oaicite:2]{index=2}
+      </pre>
+    </div>
+
+    <div id="es" class="lang">
+      <h3>Español</h3>
+      <pre>
+El chromis que nadaba en el mar
+decidió casarse.
+Se hizo un traje elegante
+con escamas limpias y afiladas.
+Se colocó una peluca rizada
+adornada con conchitas...
+... (versión completa en español)
+Pero ya estoy cansado de cantar
+y me falta el aliento;
+así que denme licencia,
+déjenme beber un trago
+por su salud;
+si no, mi garganta se seca
+y mis pulmones se vacían. :contentReference[oaicite:3]{index=3}
+      </pre>
+    </div>
+  </div>
+
+  <section class="commento">
+    <strong>Note:</strong>
+    <p><em>Lo Guarracino</em>, datata fine Settecento, racconta in dialetto una grottesca “guerra di Troia subacquea”: il pesce Guarracino, innamorato di una sardina promessa a un altro, scatena un’epica rissa immortale tra creature marine – infine l’interprete si arrende all’esaurimento vocale e chiede un brindisi per riprendere fiato. :contentReference[oaicite:4]{index=4}</p>
+  </section>
+
+  <script>
+    document.getElementById('langSelect').addEventListener('change', function(){
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.getElementById(this.value).classList.add('active');
+    });
+  </script>
+</body>
+</html>
+  <script>
+    document.getElementById('langSelect').addEventListener('change', function(){
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.getElementById(this.value).classList.add('active');
+    });
+  </script>
+</body>
+</html>
